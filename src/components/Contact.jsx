@@ -65,7 +65,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="relative">
+    <div id="contact" className="relative overflow-x-hidden">
       {/* Background elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
         <div className="absolute top-20 left-10 w-40 h-40 bg-[#64ffda]/2 rounded-full blur-3xl" />
@@ -90,27 +90,27 @@ const Contact = () => {
 
         <motion.div
           variants={fadeIn("up", "tween", 0.2, 1)}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <p className='text-[#a8b2d1] text-lg max-w-3xl mx-auto leading-relaxed'>
             Have a project in mind or want to discuss opportunities? I'd love to hear from you. Let's create something amazing together!
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-16 items-start">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-start w-full max-w-full overflow-x-hidden">
           {/* Contact Form */}
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="bg-black/50 backdrop-blur-sm border border-[#64ffda]/30 rounded-2xl p-8 hover:border-[#64ffda]/60 transition-all duration-300"
+            className="min-w-0 bg-black/50 backdrop-blur-sm border border-[#64ffda]/30 rounded-2xl p-6 md:p-8 hover:border-[#64ffda]/60 transition-all duration-300 w-full"
           >
-            <h3 className="text-2xl font-bold text-white mb-8">Send me a message</h3>
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-6 md:mb-8">Send me a message</h3>
 
             <form
               ref={formRef}
               onSubmit={handleSubmit}
               className='flex flex-col gap-6'
             >
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                 <label className='flex flex-col'>
                   <span className='text-white font-medium mb-3'>Your Name</span>
                   <input
@@ -119,7 +119,7 @@ const Contact = () => {
                     value={form.name}
                     onChange={handleChange}
                     placeholder="What's your name?"
-                    className='bg-black/50 border border-[#64ffda]/50 py-4 px-6 placeholder:text-[#a8b2d1] text-white rounded-lg outline-none font-medium focus:border-[#64ffda] transition-colors duration-300'
+                    className='bg-black/50 border border-[#64ffda]/50 py-3 md:py-4 px-4 md:px-6 placeholder:text-[#a8b2d1] text-white rounded-lg outline-none font-medium focus:border-[#64ffda] transition-colors duration-300'
                   />
                 </label>
                 <label className='flex flex-col'>
@@ -130,7 +130,7 @@ const Contact = () => {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="your.email@example.com"
-                    className='bg-black/50 border border-[#64ffda]/50 py-4 px-6 placeholder:text-[#a8b2d1] text-white rounded-lg outline-none font-medium focus:border-[#64ffda] transition-colors duration-300'
+                    className='bg-black/50 border border-[#64ffda]/50 py-3 md:py-4 px-4 md:px-6 placeholder:text-[#a8b2d1] text-white rounded-lg outline-none font-medium focus:border-[#64ffda] transition-colors duration-300'
                   />
                 </label>
               </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                   value={form.message}
                   onChange={handleChange}
                   placeholder='Tell me about your project or just say hello!'
-                  className='bg-slate-800/50 border border-[#64ffda]/30 py-4 px-6 placeholder:text-[#a8b2d1] text-white rounded-lg outline-none font-medium focus:border-[#64ffda] transition-colors duration-300 resize-none'
+                  className='bg-slate-800/50 border border-[#64ffda]/30 py-3 md:py-4 px-4 md:px-6 placeholder:text-[#a8b2d1] text-white rounded-lg outline-none font-medium focus:border-[#64ffda] transition-colors duration-300 resize-none'
                 />
               </label>
 
@@ -151,7 +151,7 @@ const Contact = () => {
                 type='submit'
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className='bg-gradient-to-r from-[#64ffda] to-[#915EFF] py-4 px-8 rounded-lg text-white font-bold hover:shadow-lg hover:shadow-[#64ffda]/25 transition-all duration-300 self-start'
+                className='bg-gradient-to-r from-[#64ffda] to-[#915EFF] py-3 md:py-4 px-6 md:px-8 rounded-lg text-white font-bold hover:shadow-lg hover:shadow-[#64ffda]/25 transition-all duration-300 self-start'
               >
                 {loading ? "Sending..." : "Send Message"}
               </motion.button>
@@ -161,15 +161,15 @@ const Contact = () => {
           {/* Contact Info & 3D Canvas */}
           <motion.div
             variants={slideIn("right", "tween", 0.2, 1)}
-            className="space-y-8"
+            className="min-w-0 space-y-8 w-full"
           >
             {/* Contact Information */}
-            <div className="bg-black/50 backdrop-blur-sm border border-[#64ffda]/30 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Let's talk</h3>
+            <div className="bg-black/50 backdrop-blur-sm border border-[#64ffda]/30 rounded-2xl p-6 md:p-8">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">Let's talk</h3>
               
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#64ffda] to-[#915EFF] rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#64ffda] to-[#915EFF] rounded-lg flex items-center justify-center">
                     <span className="text-white font-bold">📧</span>
                   </div>
                   <div>
@@ -179,7 +179,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#64ffda] to-[#915EFF] rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#64ffda] to-[#915EFF] rounded-lg flex items-center justify-center">
                     <span className="text-white font-bold">💼</span>
                   </div>
                   <div>
@@ -189,7 +189,7 @@ const Contact = () => {
                 </div>
                 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#64ffda] to-[#915EFF] rounded-lg flex items-center justify-center">
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-[#64ffda] to-[#915EFF] rounded-lg flex items-center justify-center">
                     <span className="text-white font-bold">🐙</span>
                   </div>
                   <div>
@@ -201,7 +201,7 @@ const Contact = () => {
             </div>
 
             {/* 3D Canvas */}
-            <div className="h-[400px] rounded-2xl overflow-hidden border border-[#64ffda]/20">
+            <div className="h-[260px] md:h-[400px] rounded-2xl overflow-hidden border border-[#64ffda]/20 w-full max-w-full">
               <EarthCanvas />
             </div>
           </motion.div>

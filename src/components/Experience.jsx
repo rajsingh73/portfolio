@@ -26,11 +26,11 @@ const ExperienceCard = ({ experience, index }) => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: index * 0.2 + 0.4 }}
           viewport={{ once: true }}
-          className={`w-5/12 ${isLeft ? 'mr-auto pr-8' : 'ml-auto pl-8'}`}
+          className={`w-full md:w-5/12 ${isLeft ? 'md:mr-auto md:pr-8' : 'md:ml-auto md:pl-8'} pl-6`}
         >
-          <div className="bg-black/50 backdrop-blur-sm border border-[#64ffda]/30 rounded-2xl p-8 hover:border-[#64ffda]/60 transition-all duration-300 group relative">
+          <div className="bg-black/50 backdrop-blur-sm border border-[#64ffda]/30 rounded-2xl p-6 md:p-8 hover:border-[#64ffda]/60 transition-all duration-300 group relative">
             {/* Arrow pointing to timeline */}
-            <div className={`absolute top-8 ${isLeft ? 'right-0 translate-x-1/2' : 'left-0 -translate-x-1/2'} w-0 h-0 border-t-[12px] border-b-[12px] ${isLeft ? 'border-l-[20px] border-l-[#64ffda]/30' : 'border-r-[20px] border-r-[#64ffda]/30'} border-t-transparent border-b-transparent`} />
+            <div className={`hidden md:block absolute top-8 ${isLeft ? 'right-0 translate-x-1/2' : 'left-0 -translate-x-1/2'} w-0 h-0 border-t-[12px] border-b-[12px] ${isLeft ? 'border-l-[20px] border-l-[#64ffda]/30' : 'border-r-[20px] border-r-[#64ffda]/30'} border-t-transparent border-b-transparent`} />
             
             <div className="flex flex-col gap-4 mb-6">
               <div>
@@ -101,9 +101,9 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        <div className="relative">
+        <div className="relative pl-8 md:pl-0">
           {/* Central Timeline Line - Full Height */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-[#64ffda] to-[#915EFF] z-0" />
+          <div className="absolute left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-[2px] md:w-1 h-full bg-gradient-to-b from-[#64ffda] to-[#915EFF] z-0" />
           
           <div className="space-y-16">
             {experiences.map((experience, index) => (
