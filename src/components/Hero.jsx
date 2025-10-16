@@ -56,7 +56,7 @@ const Hero = () => {
               >
                 View My Work
               </motion.button>
-              <a href="https://drive.usercontent.google.com/u/0/uc?id=1JbX864aIBnOmWnuWO0hPEVwGliq6nUUx&export=download" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.usercontent.google.com/u/0/uc?id=1BaNdrNUg64gqJ5_jGDJPIZDMp318brVi&export=download" target="_blank" rel="noopener noreferrer">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
