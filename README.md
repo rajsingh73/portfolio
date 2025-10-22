@@ -7,7 +7,7 @@
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-**[🌐 Live Portfolio](https://rajsingh73.vercel.app/)** | **[📧 Contact Me](mailto:rajsingh73@gmail.com)**
+**[🌐 Live Portfolio](https://rajsingh73.vercel.app/)**
 
 A modern, responsive portfolio website showcasing my skills as a Full-Stack Developer with stunning 3D animations and interactive elements.
 
@@ -199,9 +199,9 @@ A modern web application for instant global currency conversion using real-time 
 ## 📞 Contact & Connect
 
 - **Portfolio**: [rajsingh73.vercel.app](https://rajsingh73.vercel.app/)
-- **Email**: rajsingh73@gmail.com
+- **Email**: raj85singh95@gmail.com
 - **GitHub**: [@rajsingh73](https://github.com/rajsingh73)
-- **LinkedIn**: [Raj Singh](https://linkedin.com/in/rajsingh73)
+- **LinkedIn**: [Raj Singh]([https://linkedin.com/in/rajsingh73](https://www.linkedin.com/in/raj-singh-a1a819283/))
 
 ## 📄 License
 
